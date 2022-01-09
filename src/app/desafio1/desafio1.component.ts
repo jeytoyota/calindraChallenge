@@ -11,11 +11,9 @@ export class Desafio1Component implements OnInit {
 
   listProducts: any[]
   listNoFilter: any[]
-
   listAll: any[]
   word: any = null
   show: boolean = true
-
 
   constructor(
     private serviceD1: Desafio1Service
@@ -30,7 +28,6 @@ export class Desafio1Component implements OnInit {
       this.listAll = Object.values(resp)
       this.listProducts = this.listAll[0]
       this.listNoFilter = this.listAll[0]
-      console.log(this.listAll);
     })
   }
 
@@ -52,5 +49,4 @@ export class Desafio1Component implements OnInit {
     this.word = ""
   }
 
-  
 }

@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* navbar */
+.logo {
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 53px;
+}
+
+.title {
+   color : #846219;
+   width: 168px;
+   height: 48px;
+   font-size: 41,2px;
+   font-weight: 700;
+   font-family: 'Roboto Condensed', sans-serif;
+  justify-content: center;
+   /* position: absolute; */
+}
+
+.nav-item {
+    color : #846219
+    
+}
+
+/* first-banner */
+.banner {
+   background-color:#E9E9E9;
+   height: 50em;
+}
+
+.banner2 {
+    background-color:#506FA9;
+    background-image: url("./../../assets/img/Bitmap.png");
+    background-repeat: no-repeat;
+    mix-blend-mode : multiply;
+    height: 50em;
+ }
+
+.title-banner {
+    color :  #716565;
+    font-size : 4em;
+    font-weight: 700;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.title2-banner {
+    color :  #ffffff;
+    font-size : 4em;
+    font-weight: 700;
+}

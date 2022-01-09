@@ -1,17 +1,17 @@
 <div *ngIf="show == true" class="container mt-5">
     <form class="row d-flex justify-content-center mt-5">
         <h3>Desafio 1</h3>
+        <a routerLink="/desafio2" >Desafio2</a>
         <div class="col-md-5">
-            <label for="inputSearch" class="visually-hidden">Busca</label>
-            <input type="text" class="form-control" id="inputSearch" placeholder="Digite para pesquisar"
+            <label for="inputSearch" class="visually-hidden ">Busca</label>
+            <input type="text" class="form-control mt-5" id="inputSearch" placeholder="Digite para pesquisar"
                 [(ngModel)]='word' [ngModelOptions]="{standalone: true}">
         </div>
-        <div class="col-auto ps-0 ">
+        <div class="col-auto ps-0 mt-5 ">
             <button type="submit" class="btn btn-primary  mb-3" (click)='search()'>Buscar</button>
         </div>
     </form>
 </div>
-
 <div *ngIf="show == false" class="container mt-5">
     <div class="col-auto ps-0 ">
         <button type="submit" class="btn btn-primary  mb-3" (click)='newSearch()'>Nova busca</button>
@@ -25,8 +25,10 @@
                 <div class="card text-white bg-secondary mb-3 mb-2 mt-3" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
-                        <p class="card-subtitle mb-2 mt-2">Tipo: {{item.type}}</p>
+                        <p class="card-text mt-2">Tipo: {{item.type}}</p>
                         <p class="card-text">Id: {{item.id}}</p>
+                        <p class="card-text">Pontuação: {{item._meta.score}}</p>
+                        <p class="card-text">Visitas: {{item._meta.visitsClickCount}}</p>
                     </div>
                 </div>
             </div>
