@@ -1,4 +1,6 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+.font {
     font-family: 'Roboto Condensed', sans-serif;
 }
 /* navbar */
@@ -8,20 +10,28 @@ body {
     margin-left: 53px;
 }
 
-.title {
-   color : #846219;
-   width: 168px;
-   height: 48px;
-   font-size: 41,2px;
-   font-weight: 700;
-   font-family: 'Roboto Condensed', sans-serif;
-  justify-content: center;
-   /* position: absolute; */
+.logo-text {
+    display: flex;
 }
 
-.nav-item {
-    color : #846219
-    
+
+.title {
+   color : #846219;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   font-size: 40px;
+   font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+    font-size: 16,2px;
+    letter-spacing: .3rem;
+}
+
+.items {
+    color : #846219 !important;
 }
 
 /* first-banner */
@@ -30,17 +40,9 @@ body {
    height: 50em;
 }
 
-.banner2 {
-    background-color:#506FA9;
-    background-image: url("./../../assets/img/Bitmap.png");
-    background-repeat: no-repeat;
-    mix-blend-mode : multiply;
-    height: 50em;
- }
-
 .title-banner {
     color :  #716565;
-    font-size : 4em;
+    font-size : 3.5em;
     font-weight: 700;
 }
 
@@ -48,8 +50,70 @@ body {
     width: 100%;
 }
 
+/* second banner */
+
+.color {
+    background-color: #506FA9
+}
+
+.banner2 {
+    height: 50em;
+ }
+
+.banner2-image {
+    width: 100%;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(-3px 27px 29px #000000);
+    justify-content: right;
+}
+
 .title2-banner {
     color :  #ffffff;
-    font-size : 4em;
+    font-size : 3rem;
     font-weight: 700;
+}
+
+.text-banner {
+    font-size: 2em;
+    color :  #ffffff;
+    font-weight: 100;   
+}
+
+/* Footer */
+
+footer{
+    background-color:#E9E9E9 ;
+    color : #716565
+}
+
+footer .text {
+    font-weight: 650;
+}
+
+
+@media (max-width: 767px) {
+    .title2-banner .title-banner{
+        font-size: 40px;
+    }
+    .text-banner{
+        font-size: 20px;
+    }
+    .center-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-text{
+        display: none;
+    }
+
+    .logo {
+        height: 40px;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .banner{
+        height: 30em;
+    }
 }
